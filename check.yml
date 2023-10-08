@@ -3,8 +3,8 @@
   hosts: all
   tasks:
     - name: Ping my hosts
-     ansible.builtin.ping:
+      ansible.builtin.ping:
 
     - name: Print message
-     ansible.builtin.debug:
-       msg: Hello world
+      ansible.builtin.debug:
+        msg: Hello world
