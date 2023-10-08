@@ -2,6 +2,9 @@
 - name: ansible command
   hosts: all
   tasks:
-    - name: check uptime
-      ansible.builtin.command: uptime
-      register: command_output
+    - name: Ping my hosts
+     ansible.builtin.ping:
+
+    - name: Print message
+     ansible.builtin.debug:
+       msg: Hello world
